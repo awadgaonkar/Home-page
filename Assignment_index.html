@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Assisnment-2:Internship Studio</title>
+        <!--<link href="Assignment-index.css" rel="stylesheet" type="text/css">-->
+
+        <style>
+            /* universal selector "*"    */
+            *{
+                box-sizing: border-box;
+            }
+            /* Style the body */
+            body{
+                font-family: Arial;
+                margin: 0;
+            }
+            /* for heading style */
+            .heading{
+                padding: 60px;
+                text-align: center;
+                background-color: seagreen;
+                color:white;
+            }
+            /* Navbar style */
+            .navbar{
+                display: flex;
+                background-color: lightgrey;
+                position: sticky;
+                top:0;
+            }
+            .navbar a{
+                color:black;
+                padding: 15px 20px;
+                text-decoration: none;
+                text-align: center;
+            
+            }
+            .navbar a:hover{
+                background-color: #333;
+                columns: white;
+            }
+
+            .row{
+                display: flex;
+                flex-wrap: wrap;
+            }
+            .sidebar{
+                flex:35%;
+                background-color: azure;
+                padding: 20px;
+            }
+            .main-content{
+                flex: 65%;
+                background-color: antiquewhite;
+                padding: 20px;
+            }
+            .title-image{
+                background-color: tan;
+                width:100%;
+                max-width: 100%;
+                height: auto;
+                padding: 20px;
+            }
+            .img{
+                background-color:#ffcc5c ;
+                width:50%;
+                max-width:50%;
+                height:auto;
+                padding: 10px;
+                border-radius:8px ;
+                position: relative;
+
+                animation-name: image;
+                animation-duration: 4s;
+                animation-iteration-count: infinite;
+            }
+            @keyframes image{
+                0%{background-color:#FFFF33 ; left:0px ;top:0px ;}
+                25%{background-color:#FFCC33 ; left:200px ;top:0px ;}
+                50%{background-color:#FF9933 ; left:200px ;top:50px ;}
+                75%{background-color:#FF6633 ; left:0px ;top:50px ;}
+                100%{background-color:#FF3333 ; left:0px ;top:0px ;}
+            }
+
+            .footer{
+                padding: 5px;
+                text-align: center;
+                background-color: cadetblue;
+            }
+            @media(max-width:700px){
+                .row,.navabr{
+                    flex-direction: column;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div style="background-color: pink; padding:2px;">
+            <h4 style="text-align: center;">This is the CSS assignment using various css properties alonh with responsive web-design. </h4>
+        </div>
+        <div class="heading">
+            <h1>Welcome to responsive webpage!</h1>
+            <p>With a <strong>Adjustable and Reactive</strong> layout.</p>
+        </div>
+        <div class="navbar">
+            <a href="Assignment_index.html">Home</a>
+            <a href="ContactUs.html">Contact Us</a>
+        </div>
+
+        <div class="row">
+            <div class="sidebar">
+                <h2>Internship Studio</h2>
+                <h5>Photo of Internship Studio:</h5>
+                <img src="home image.png" class="title-image" style="height: 200px;">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla unde perferendis repellendus, repellat dignissimos molestiae ipsa eveniet excepturi beatae molestias, neque debitis ex accusantium dolorum explicabo error ipsam porro ipsum Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla unde perferendis repellendus, repellat dignissimos molestiae ipsa eveniet excepturi beatae molestias, neque debitis ex accusantium dolorum explicabo error ipsam porro ipsum.</p>
+                <h3>web-design Course</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nulla unde perferendis repellendus, repellat dignissimos molestiae ipsa eveniet excepturi beatae molestias, neque debitis ex accusantium dolorum explicabo error ipsam porro ipsum</p>
+                
+                <img src="internship1 image.png" class="img" style="height: 60px;"><br><br><br>
+                </div>
+
+                <div class="main-content">
+                    <h2>WEBSITE DESIGN</h2>
+                    <h5>starting from 23 Jan,2022</h5>
+                    <img src="northern.jpg" class="title-image" style="height: 200px;">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia atque labore harum autem dolorum quos asperiores, reiciendis fuga, sunt minima sapiente nobis delectus enim maxime pariatur soluta nulla, at explicabo?</p>
+                    <P>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim quibusdam dignissimos, esse itaque cumque in porro sit nulla quas fugit ab repellat modi quaerat! Repudiandae velit enim explicabo quis ipsa. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illo at, labore placeat nulla itaque modi quasi aliquid dolorem ipsa. Tenetur ex cum maxime quidem aliquam praesentium tempore similique harum modi?</P>
+
+                    <br>
+                    <h2>Who This Internship is for:</h2>
+                    <h5>Your Internship will be begin from 23 Jan,2022:</h5>
+                    <ul>
+                        <li>Anyone who wants to learn about creating websites</li>
+                        <li>In thes Internship we learn HTML,CSS and Javascript.</li>
+                        <li>Anyone who wants to develop a step-by-step understanding of HTML, CSS, JavaScript, and making a website.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer">
+            <h2>@Internship Studio</h2>
+            </div>
+        
+
+
+    </body>
+</html>
