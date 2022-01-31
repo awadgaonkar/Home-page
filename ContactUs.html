@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Assisnment-2:Internship Studio</title>
+        <link href="Assignment-index1.css" rel="stylesheet" type="text/css">
+
+
+        <script>
+            function hello(){
+                alert("Thank You, for registered!");
+            }
+        </script>
+
+        <style>
+        </style>
+
+
+    </head>
+    <body>
+        <div class="navbar">
+            <a href="Assignment_index.html">Home</a>
+            <a href="ContactUs.html">Contact Us</a></div>
+            <header class="heading">
+                <h1>REGISTRATION FORM</h1>
+            </header>
+            <div id="containt" class="container">
+                <form action="Assignment_index.html">
+                    <div class="row">
+                        <div class="col-25">
+                            <label for="uname">User Name</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" name="username" placeholder="your Name..." required>
+                        </div>
+
+
+                        <div class="col-25">
+                            <label for="email">Email-Id</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="text" name="email" placeholder="your Email..." required>
+                        </div>
+
+
+                        <div class="col-25">
+                            <label for="pwd">Password</label>
+                        </div>
+                        <div class="col-75">
+                            <input type="password" name="password" placeholder="your Password..." required>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-25">
+                                <label for="country">Select the Program</label>
+                            </div>
+                            <div class="col-75">
+                                <select name="program">
+                                    <option value="Select Internship">Select Internship</option>
+                                    <option value="Machine Learning ">Machine Learning </option>
+                                    <option value="web-designing">Web-Designing </option>
+                                    <option value="Excel-Automation">Excel-Automation </option>
+                                    <option value="Digital Marketing ">Digital Marketing </option>
+                                    <option value="Python Programming">Python Programming </option>
+                                </select>
+                            </div> 
+                        </div>
+
+                        <div class="col-25">
+                            <label for="subject">Message</label>
+                        </div>
+                        <div class="col-75">
+                            <textarea id="message" name="message" placeholder="Write your message..." style="height:100px"  required></textarea>
+                        </div>
+
+                    </div>
+
+                    <div class="row">
+                        <a href="" class="button" onclick="hello();">Submit</a>
+                    </div>
+                </form>
+                
+
+            </div>
+    </body>
+</html>
